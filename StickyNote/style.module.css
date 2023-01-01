@@ -1,0 +1,215 @@
+i {
+  padding: 8px;
+}
+i:hover {
+  background-color: var(--bs-gray-400);
+  cursor: pointer;
+}
+body {
+  min-height: 100vh;
+}
+/* Maincontainer or hole body of the app */
+.maincontainer {
+  border-bottom: none;
+  background-color: whitesmoke;
+  height: auto;
+  width: 90vw;
+  border: 0.2px solid black;
+}
+input {
+  width: 40%;
+  border: 0.2px solid black;
+  outline: none;
+}
+
+/* Setting page of the app */
+.settingPage {
+  position: absolute;
+  top: 30%;
+  display: none;
+  height: 30vh;
+  width: 30vw;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 15px;
+}
+.settingPage i {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+.settingPage button {
+  margin: 8px;
+  padding: 5px 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.settingPage button:hover {
+  background-color: var(--bs-success);
+}
+
+/* notepage */
+.addnotemodelPage {
+  position: absolute;
+  top: 30%;
+  display: none;
+  height: 40vh;
+  width: 30vw;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.headernote {
+  border-bottom: 0.2px solid black;
+}
+.iconsNote {
+  position: absolute;
+  border-top: 0.2px solid black;
+  width: 100%;
+  bottom: 0px;
+}
+.textareafield textarea {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  background: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  resize: none;
+  height: 197px;
+}
+.textareafield input {
+  background: transparent;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 0.1px solid black;
+} 
+/* colour css */
+.colors {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  display: none;
+}
+.colors div {
+  display: flex;
+}
+.color {
+  width: 25%;
+  height: 70px;
+}
+.color:hover {
+  scale: 1.02;
+  z-index: 1;
+}
+
+/* Colours used for desgining... */
+
+.lightblue {
+  background-color: lightblue;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.lightpink {
+  background-color: lightpink;
+}
+.yellow {
+  background-color: yellow;
+}
+.borderData {
+  border: 5px solid white;
+}
+/* Notecontainer where the note are created */
+.noteareaContainer {
+  gap: 10px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+.notedata {
+  position: relative;
+  height: auto;
+  border: 0.2px solid black;
+  border-bottom: 0.1px solid black;
+}
+.dataNote {
+  width: 19%;
+}
+.delete {
+  border: none;
+  background: transparent;
+}
+/* font fixer css or used for toggelr in javacsript... */
+.bold {
+  font-weight: 900;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.strike {
+  text-decoration: line-through;
+}
+.saveButton {
+  position: absolute;
+  right: 5px;
+  border: none;
+  background: transparent;
+}
+/* for highlighter..... */
+.animate {
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+@keyframes myfirst {
+  0% {
+    background-color: greenyellow;
+    color: "black";
+    scale: 1.2;
+  }
+  100% {
+    background-color: greenyellow;
+    color: "black";
+    scale: 1;
+  }
+}  
+
+/* Seacrh button design... */
+.btnsearch {
+  background-color: gray;
+  border: 0.2px solid black;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+/* delete all note at ones */
+.alldelete {
+  padding: 8px 30px;
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* making responcive for phone only */
+@media screen and (min-width:350px) and (max-width:560px){
+  .alldelete {
+    padding: 8px 6px;
+    margin: 2px;
+    font-size: 14px;
+  }
+  .settingPage {
+    height: 30vh;
+    width: 80vw;
+  }
+  .addnotemodelPage {
+    height: 40vh;
+    width: 80vw;
+  }
+  .dataNote {
+    width:47%;
+  }
+}
